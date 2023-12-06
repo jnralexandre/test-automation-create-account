@@ -12,12 +12,12 @@ public class ElementsPessoaFisicaPage {
         this.driver = driver;
     }
 
-    public void fillInFieldDateBirth(String dataNascimento) {
+    public void preencherCampoDataNascimento(String dataNascimento) {
         WebElement dateBirth = driver.findElement(By.id("date"));
         dateBirth.sendKeys(dataNascimento);
     }
 
-    public void fillInFieldCpf(String cpf) {
+    public void preencherCampoCpf(String cpf) {
         WebElement document = driver.findElement(By.id("document"));
         document.sendKeys(cpf);
     }

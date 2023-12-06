@@ -15,54 +15,64 @@ public class ElementsCommunsPage {
         this.driver = driver;
     }
 
-    public void acceptCookies() {
+    public void aceitarCookies() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
         WebElement buttonCookies = driver.findElement(By.id("onetrust-accept-btn-handler"));
         buttonCookies.click();
     }
 
-    public void clickOnTheIndividualButton() {
+    public void clicarNoBotaoPessoaFisica() {
         WebElement individualButton = driver.findElement(By.id("PfButton"));
         individualButton.click();
     }
 
-    public void clickOnTheLegalEntityButton() {
+    public void clicarNoBotaoPessoaJuridica() {
         WebElement legalEntityButton = driver.findElement(By.id("PjButton"));
         legalEntityButton.click();
     }
 
-    public void fillInNameField(String nome) {
+    public void preencherCampoNome(String nome) {
         WebElement firstName = driver.findElement(By.id("name"));
         firstName.sendKeys(nome);
     }
 
-    public void fillInLastNameField(String sobrenome) {
+    public void preencherCampoSobrenome(String sobrenome) {
         WebElement lastName = driver.findElement(By.id("lastname"));
         lastName.sendKeys(sobrenome);
     }
 
-    public void clickOnTheDdiFieldButtonAndSelectBrazil() {
+    public void clicarNoBotaoESelecionarBrasil() {
         WebElement choseADdi = driver.findElement(By.xpath("//div[@role=\"menu\"]/a[@id=\"ddi\"] "));
         choseADdi.click();
         WebElement country = driver.findElement(By.xpath("//a[contains(text(), \"Brasil - +55\")]"));
         country.click();
     }
 
-    public void fillInDdiAndPhoneField(String ddd, String numeroTelefone) {
+    public void preencherCampoDddENumeroTelefone(String ddd, String numeroTelefone) {
         WebElement dddPage = driver.findElement(By.id("ddd"));
         dddPage.sendKeys(ddd);
         WebElement phonePage = driver.findElement(By.id("phone"));
         phonePage.sendKeys(numeroTelefone);
     }
 
-    public void fillInEmailField(String email) {
+    public void preencherCampoEmail(String email) {
         WebElement emailPage = driver.findElement(By.id("email"));
         emailPage.sendKeys(email);
     }
 
-    public void fillFieldConfirmEmail(String confEmail) {
+    public void preencherCampoConfirmarEmail(String confEmail) {
         WebElement confEmailPage = driver.findElement(By.id("confEmail"));
         confEmailPage.sendKeys(confEmail);
+    }
+
+    public void aceitarAutorizacaoLgpd(){
+        WebElement checkboxLgpd = driver.findElement(By.xpath("//div[@Class=\"rs-checkbox-checker\"]/*[contains(text(), \"Autorizações Legais e LGPD\")]"));
+        checkboxLgpd.click();
+    }
+
+    public void clicarNoBotaoCadastrar() {
+        WebElement botaoCadastrar = driver.findElement(By.xpath("//*[contains(text(), \"Cadastrar\")]"));
+        botaoCadastrar.click();
     }
 
 }
