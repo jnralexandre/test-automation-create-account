@@ -42,7 +42,7 @@ public class ElementsCommunsPage {
     }
 
     public void clicarNoBotaoESelecionarBrasil() {
-        WebElement choseADdi = driver.findElement(By.xpath("//div[@role=\"menu\"]/a[@id=\"ddi\"] "));
+        WebElement choseADdi = driver.findElement(By.xpath("//div[@role=\"menu\"]/a[@id=\"ddi\"]"));
         choseADdi.click();
         WebElement country = driver.findElement(By.xpath("//a[contains(text(), \"Brasil - +55\")]"));
         country.click();

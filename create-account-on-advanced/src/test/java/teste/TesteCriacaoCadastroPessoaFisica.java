@@ -33,8 +33,8 @@ public class TesteCriacaoCadastroPessoaFisica {
         elementsPessoaFisicaPage.preencherCampoCpf("911.237.150-50");
         elementsCommunsPage.clicarNoBotaoESelecionarBrasil();
         elementsCommunsPage.preencherCampoDddENumeroTelefone("51", "967625188");
-        elementsCommunsPage.preencherCampoEmail("nino4179@uorak.com@uorak.com");
-        elementsCommunsPage.preencherCampoConfirmarEmail("nino4179@uorak.com@uorak.com");
+        elementsCommunsPage.preencherCampoEmail("stasys6348@uorak.com");
+        elementsCommunsPage.preencherCampoConfirmarEmail("stasys6348@uorak.com");
         elementsCommunsPage.aceitarAutorizacaoLgpd();
         elementsCommunsPage.clicarNoBotaoCadastrar();
     }
@@ -47,8 +47,8 @@ public class TesteCriacaoCadastroPessoaFisica {
         elementsPessoaFisicaPage.preencherCampoCpf("000.000.000-000");
         elementsCommunsPage.clicarNoBotaoESelecionarBrasil();
         elementsCommunsPage.preencherCampoDddENumeroTelefone("51", "985774350");
-        elementsCommunsPage.preencherCampoEmail("roxanna6987@uorak.com");
-        elementsCommunsPage.preencherCampoConfirmarEmail("roxanna6987@uorak.com");
+        elementsCommunsPage.preencherCampoEmail("gene6907@uorak.com");
+        elementsCommunsPage.preencherCampoConfirmarEmail("gene6907@uorak.com");
         elementsCommunsPage.aceitarAutorizacaoLgpd();
         elementsCommunsPage.clicarNoBotaoCadastrar();
     }
